@@ -97,12 +97,12 @@ function TodoList() {
 						</svg>
 					</button>
 				
-				<h1>Todo App</h1>
+				<h1>Awesome ToDo</h1>
 			</div>
 
 			{separateTodos().importantTodos.length > 0 ? (
 				<>
-					<h2>Important</h2>
+					<h2>For today</h2>
 					<ul>
 						{separateTodos().importantTodos.map(todo => (
 							<TodoItem
@@ -120,7 +120,7 @@ function TodoList() {
 				<></>
 			)}
 
-			<h2>Tasks</h2>
+			<h2>Future items</h2>
 			
 			<ul>
 				{separateTodos().defaultTodos.length > 0 ? (
@@ -150,7 +150,7 @@ function TodoList() {
 					<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Close</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368" /></svg>
 				</button>
 
-				<input type="text" name="todo" id="todo-input" autoComplete="off" className="add-input" placeholder="What do you need to do?" />
+				<input type="text" name="todo" id="todo-input" autoComplete="off" className="add-input" placeholder="What would you like to do?" />
 				<button type="submit" className="add-button" onClick={toggleAddTodoVisibility}>
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" fill="none">
 						<path d="M8 3.5V12.5M12.5 8H3.5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
