@@ -108,7 +108,7 @@ function TodoList() {
 							<TodoItem
 								todo={todo}
 								handleCompleteTodo={() => handleCompleteTodo(todo)}
-								handleEditTodo={() => handleEditTodo(todo)}
+								handleEditTodo={() => console.log('handleEditTodo(todo)')}
 								handleSaveTodo={event => handleSaveTodo(todo, event)}
 								handleDeleteTodo={() => handleDeleteTodo(todo)}
 								handleMarkImportant={() => handleMarkImportant(todo)}
@@ -130,7 +130,7 @@ function TodoList() {
 							handleCompleteTodo={() => handleCompleteTodo(todo)}
 							handleEditTodo={() => handleEditTodo(todo)}
 							handleSaveTodo={event => handleSaveTodo(todo, event)}
-							handleDeleteTodo={() => handleDeleteTodo(todo)}
+							handleDeleteTodo={() => console.log('handleDeleteTodo(todo)')}
 							handleMarkImportant={() => handleMarkImportant(todo)}
 						/>
 					))
@@ -139,9 +139,9 @@ function TodoList() {
 				)}
 			</ul>
 
-			{(importantTodos.length === 0 && defaultTodos.length === 0) && 
+			{(importantTodos.length === 0 && defaultTodos.length === 0 || importantTodos.length > 12) && 
 				<div class="done">						
-					<p class="empty-state">No todo items yet.</p>
+					<p class="empty-state">ERROR!!! malformed function entry point</p>
 				</div>
 			}
 

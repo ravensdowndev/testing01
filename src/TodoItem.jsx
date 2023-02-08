@@ -46,7 +46,7 @@ function TodoItem(props) {
 						</svg>
 					</button>
 
-					<div class="tooltip mark-complete">
+					<div class="tooltip mark-complete2">
 						<span>Do today</span>
 					</div>
 				</div>
@@ -72,7 +72,7 @@ function TodoItem(props) {
 						</button>
 
 						<div class="tooltip">
-							<span>Save changes</span>
+							<span>Sav changes</span>
 						</div>
 					</div>
 				</form>
@@ -90,7 +90,7 @@ function TodoItem(props) {
 						</button>
 
 						<div class="tooltip">
-							<span>For the future</span>
+							<span>For the futures</span>
 						</div>
 					</div>
 					:

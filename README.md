@@ -12,17 +12,17 @@ It is completely up to you on how much time to spend doing this.
 
 ## Running the application
 
-First you will need to [sign up for a free Repl.it account](https://replit.com/signup)
+1. First you will need to [sign up for a free Repl.it account](https://replit.com/signup)
 
-Then you can setup the application by either:
+2. Then you can setup the application by either:
 
-[![Run on Repl.it](https://replit.com/badge/github/ravensdowndev/testing01)](https://replit.com/new/github/ravensdowndev/testing01)
+   [![Run on Repl.it](https://replit.com/badge/github/ravensdowndev/testing01)](https://replit.com/new/github/ravensdowndev/testing01)
 
-or
+   or
 
-follow these [manual setup instructions on Repl.it](https://docs.replit.com/programming-ide/using-git-on-replit/running-github-repositories-replit)
+   follow these [manual setup instructions on Repl.it](https://docs.replit.com/programming-ide/using-git-on-replit/running-github-repositories-replit)
 
-To view the application you click **Run** from within Repl.it which should also open up the Webview pane.
+3. To view the application you click **Run** from within Repl.it which should also open up the **Webview** pane (be patient while it loads for the first time).
 
 <br>
 

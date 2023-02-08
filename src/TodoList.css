@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'Satoshi Medium';
-  font-family: sans-serif;
-  src: url('/public/Satoshi-Medium.otf');
+	font-family: sans-serif;
+	src: url('/public/Satoshi-Medium.otf');
 }
 
 *:focus {
@@ -15,8 +15,7 @@ html {
 body {
 	background: url('/public/bg.png') no-repeat center center fixed;
 	background-size: cover;
-/* 	height: 100%; */
-  font-family: 'Satoshi Medium', sans-serif;
+	font-family: 'Satoshi Medium', sans-serif;
 	margin: 0;
 	background-position: center;
 	overflow: overlay;
@@ -28,7 +27,7 @@ body {
 }
 
 .main {
-  display: flex;
+	display: flex;
 	flex-direction: column;
 	max-width: 800px;
 	justify-content: center;
@@ -43,9 +42,6 @@ h2 {
 }
 
 p.empty-state {
-/* 	padding: 8px; */
-/* 	border-radius: 8px; */
-/* 	background: rgba(256 256 256 / 20%); */
 	color: #616895;
 	width: fit-content;
 }
@@ -59,11 +55,11 @@ ul {
 }
 
 .todo-item {
-  text-decoration: none;
-  list-style-type: none;
-  display: flex;
-  gap: 8px	;
-  align-items: center;
+	text-decoration: none;
+	list-style-type: none;
+	display: flex;
+	gap: 8px;
+	align-items: center;
 	background: rgba(256 256 256 / 40%);
 	border-radius: 8px;
 	padding: 12px 8px;
@@ -94,16 +90,17 @@ p {
 }
 
 .todo-item.completed .todo-text {
-  text-decoration: line-through;
+	text-decoration: line-through;
 	color: #616895;
 }
 
 
 
-.complete-button, .check-icon-wrapper {
+.complete-button,
+.check-icon-wrapper {
 	border-radius: 50%;
-  border: 1px solid #616895;
-  background: none;
+	border: 1px solid #616895;
+	background: none;
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
@@ -114,8 +111,8 @@ p {
 	height: 24px;
 	min-height: 24px;
 	transition: 0.3s;
-  animation: task-complete-animation 0.5s ease-in-out;
- 	box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+	animation: task-complete-animation 0.5s ease-in-out;
+	box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
 }
 
 .top {
@@ -135,12 +132,12 @@ p {
 .check-icon-wrapper {
 	background: #1E212F;
 	fill: #fff;
-  animation: task-completed-animation 0.8s ease-in-out;
+	animation: task-completed-animation 0.8s ease-in-out;
 	cursor: auto;
 	width: 40px;
 	min-width: 40px;
 	height: 40px;
-	min-height: 40px;	
+	min-height: 40px;
 }
 
 .check-icon-wrapper:hover {
@@ -153,20 +150,21 @@ p {
 }
 
 @keyframes task-complete-animation {
-  0% {
-    transform: rotate(0deg) scale(1);
-  }
-	
-  50% {
-    transform: rotate(30deg) scale(0.8);
-  }
-	
-  100% {
-    transform: rotate(0deg) scale(1);
-  }
+	0% {
+		transform: rotate(0deg) scale(1);
+	}
+
+	50% {
+		transform: rotate(30deg) scale(0.8);
+	}
+
+	100% {
+		transform: rotate(0deg) scale(1);
+	}
 }
 
-.complete-button:hover, .complete-button:focus-visible {
+.complete-button:hover,
+.complete-button:focus-visible {
 	background: rgba(0 0 0 / 10%);
 	border-color: #51567b;
 }
@@ -174,25 +172,25 @@ p {
 .todo-item .complete-button:hover svg {
 	fill: #51567b;
 }
-	
+
 .todo-item.completed .complete-button {
 	background: #1E212F;
 	border-color: #1E212F;
-  animation: task-completed-animation 0.8s ease-in-out;
+	animation: task-completed-animation 0.8s ease-in-out;
 }
 
 @keyframes task-completed-animation {
-  0% {
-    transform: rotate(0deg) scale(1);
-  }
-	
-  50% {
-    transform: rotate(-20deg) scale(1.2);
-  }
-	
-  100% {
-    transform: rotate(360deg) scale(1);
-  }
+	0% {
+		transform: rotate(0deg) scale(1);
+	}
+
+	50% {
+		transform: rotate(-20deg) scale(1.2);
+	}
+
+	100% {
+		transform: rotate(360deg) scale(1);
+	}
 }
 
 .todo-item .complete-button svg {
@@ -219,7 +217,7 @@ input[type="text"] {
 }
 
 input[type="text"]::placeholder {
-	color: #616895666;
+	color: #616895;
 	font-size: 16px;
 }
 
@@ -242,7 +240,7 @@ button {
 	padding: 0;
 	border: none;
 	background: none;
-  font-family: 'Satoshi Medium', sans-serif;
+	font-family: 'Satoshi Medium', sans-serif;
 }
 
 button {
@@ -348,7 +346,7 @@ button.add-button:active {
 	color: #fff;
 	border-radius: 8px;
 	padding: 8px;
-  transform: translate(50%,-50%) translateY(4px);
+	transform: translate(50%, -50%) translateY(4px);
 	transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), width 0.3s;
 	box-shadow: 0px 8px 16px 0px #1E212F29;
 }
@@ -357,10 +355,11 @@ button.add-button:active {
 	white-space: nowrap;
 }
 
-button:hover + .tooltip, button:focus-visible + .tooltip {
+button:hover+.tooltip,
+button:focus-visible+.tooltip {
 	opacity: 1;
 	z-index: 4;
-  transform: translate(50%,-50%) translateY(0px);
+	transform: translate(50%, -50%) translateY(0px);
 }
 
 
@@ -379,7 +378,6 @@ button:hover + .tooltip, button:focus-visible + .tooltip {
 	-webkit-backdrop-filter: blur(8px);
 	width: 187px;
 	box-shadow: 0px 8px 16px 0px #1E212F29;
-/* 	transition: 0.3s; */
 	top: 36px;
 	right: 0;
 	position: absolute;
@@ -388,7 +386,7 @@ button:hover + .tooltip, button:focus-visible + .tooltip {
 }
 
 .todo-item.completed .dropdown-content {
-	width: 214px;
+	width: 224px;
 }
 
 .dropdown-content.show {
@@ -398,7 +396,7 @@ button:hover + .tooltip, button:focus-visible + .tooltip {
 }
 
 .dropdown-content.important {
-	width: 193px;
+	width: 190px;
 }
 
 .dropdown-content .dropdown-item {
@@ -421,7 +419,8 @@ button:hover + .tooltip, button:focus-visible + .tooltip {
 }
 
 
-.dropdown-content .dropdown-item.danger svg, .dropdown-content .dropdown-item.danger span {
+.dropdown-content .dropdown-item.danger svg,
+.dropdown-content .dropdown-item.danger span {
 	color: #a80000;
 	fill: #a80000 !important;
 }
@@ -430,7 +429,8 @@ button:hover + .tooltip, button:focus-visible + .tooltip {
 	background: #66666620;
 }
 
-.dropdown-content .dropdown-item.danger:hover, .dropdown-content .dropdown-item.danger:focus-visible {
+.dropdown-content .dropdown-item.danger:hover,
+.dropdown-content .dropdown-item.danger:focus-visible {
 	background: #a8000020;
 }
 
@@ -439,7 +439,7 @@ button:hover + .tooltip, button:focus-visible + .tooltip {
 }
 
 .dropdown-content .dropdown-item.danger:active {
-	background: #a8000030	;
+	background: #a8000030;
 }
 
 .dropdown-content .dropdown-item svg {
@@ -470,10 +470,10 @@ button:hover + .tooltip, button:focus-visible + .tooltip {
 	bottom: 32px;
 }
 
-.add-todo-container > *:not(.no-fill-icon-button) {
+.add-todo-container>*:not(.no-fill-icon-button) {
 	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
-	box-shadow: 0px 8px 16px 0px #1E212F00029;
+	box-shadow: 0px 8px 16px 0px #1E212F;
 }
 
 .mobile-toggle-drawer {
@@ -535,25 +535,25 @@ button:hover + .tooltip, button:focus-visible + .tooltip {
 
 @media (max-width: 900px) {
 	.main {
-		padding: 0 16px	;
+		padding: 0 16px;
 	}
 
 	.tooltip.more-options {
-		right: 55px;
+		right: 59px;
 	}
 
 	.tooltip.mark-complete {
 		right: 0;
-    left: -75px;
+		left: -75px;
 		width: fit-content;
 	}
 
 	.tooltip.mark-uncompleted {
 		right: 0;
-    left: -85px;
+		left: -85px;
 		width: fit-content;
 	}
-	
+
 
 	.add-todo-container {
 		width: calc(100% - 32px);
@@ -575,7 +575,7 @@ button:hover + .tooltip, button:focus-visible + .tooltip {
 		background: rgba(256 256 256 / 40%);
 		bottom: 0;
 		border-radius: 16px 16px 0 0;
-		box-shadow: none;	
+		box-shadow: none;
 		flex-direction: column;
 		backdrop-filter: blur(8px);
 		-webkit-backdrop-filter: blur(8px);
@@ -608,12 +608,11 @@ button:hover + .tooltip, button:focus-visible + .tooltip {
 		padding: 16px;
 	}
 
-	.add-todo-container.show + .mobile-toggle-drawer {
+	.add-todo-container.show+.mobile-toggle-drawer {
 		bottom: -80px;
 	}
-	
+
 	.mobile-toggle-drawer {
-/* 		display: flex; */
 		bottom: 32px;
 	}
 }
@@ -624,7 +623,7 @@ button:hover + .tooltip, button:focus-visible + .tooltip {
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+	width: 12px;
 }
 
 ::-webkit-scrollbar-track {
@@ -632,10 +631,10 @@ button:hover + .tooltip, button:focus-visible + .tooltip {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1E212F;
+	background: #1E212F;
 	border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2F3245;
+	background: #2F3245;
 }
