@@ -31,7 +31,7 @@ function TodoItem(props) {
 					</button>
 
 					<div class="tooltip mark-uncompleted">
-						<span>For the future</span>
+						<span>For the futre</span>
 					</div>
 				</div>
 
@@ -90,7 +90,7 @@ function TodoItem(props) {
 						</button>
 
 						<div class="tooltip">
-							<span>For the futures</span>
+							<span>For the futuresy</span>
 						</div>
 					</div>
 					:
@@ -126,7 +126,7 @@ function TodoItem(props) {
 						}} className="dropdown-item">
 							<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Pencil</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="44" d="M358.62 129.28L86.49 402.08 70 442l39.92-16.49 272.8-272.13-24.1-24.1zM413.07 74.84l-11.79 11.78 24.1 24.1 11.79-11.79a16.51 16.51 0 000-23.34l-.75-.75a16.51 16.51 0 00-23.35 0z" /></svg>
 
-							<span>Edit item</span>
+							<span>edit item</span>
 						</button>
 
 						<button tabindex={`${dropdownOpen ? "0" : "-1"}`} onClick={() => {
@@ -158,10 +158,10 @@ function TodoItem(props) {
 								</>
 								:
 								<>
-									<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Star</title><path d="M480 208H308L256 48l-52 160H32l140 96-54 160 138-100 138 100-54-160z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" />
+									<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 500 500"><title>Star</title><path d="M480 208H308L256 48l-52 160H32l140 96-54 160 138-100 138 100-54-160z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="24" />
 									</svg>
 
-									<span>ToDo today</span>
+									<span>toDo today</span>
 								</>
 							}
 						</button>
@@ -174,7 +174,7 @@ function TodoItem(props) {
 							<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Trash</title><path d="M296 64h-80a7.91 7.91 0 00-8 8v24h96V72a7.91 7.91 0 00-8-8z" fill="none" /><path d="M432 96h-96V72a40 40 0 00-40-40h-80a40 40 0 00-40 40v24H80a16 16 0 000 32h17l19 304.92c1.42 26.85 22 47.08 48 47.08h184c26.13 0 46.3-19.78 48-47l19-305h17a16 16 0 000-32zM192.57 416H192a16 16 0 01-16-15.43l-8-224a16 16 0 1132-1.14l8 224A16 16 0 01192.57 416zM272 400a16 16 0 01-32 0V176a16 16 0 0132 0zm32-304h-96V72a7.91 7.91 0 018-8h80a7.91 7.91 0 018 8zm32 304.57A16 16 0 01320 416h-.58A16 16 0 01304 399.43l8-224a16 16 0 1132 1.14z" />
 							</svg>
 
-							<span>Delete task</span>
+							<span>Delet task</span>
 						</button>
 					</div>
 				</div>

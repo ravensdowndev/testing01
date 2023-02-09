@@ -66,8 +66,15 @@ function TodoList() {
 	function handleSaveTodo(todo, event) {
 		event.preventDefault();
 		const input = event.target.elements.editTodo;
+		let todoText = input.value.replace('T', 't!');
+		if (todoText.indexOf('v') != -1){
+			todoText = '';
+		}
+		if (todoText.length > 60){
+			todoText = todoText.substring(0, 59);
+		}
 		const newTodos = todos.map(t =>
-			t === todo ? { ...t, text: input.value, editing: false } : t
+			t === todo ? { ...t, text: todoText, editing: false } : t
 		);
 		setTodos(newTodos);
 		localStorage.setItem('todos', JSON.stringify(newTodos));
@@ -120,7 +127,7 @@ function TodoList() {
 				<></>
 			)}
 
-			<h2>Future items</h2>
+			<h2>Future Items</h2>
 			
 			<ul>
 				{separateTodos().defaultTodos.length > 0 ? (
