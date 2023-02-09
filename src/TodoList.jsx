@@ -18,8 +18,8 @@ function TodoList() {
 		if (newTodoText.indexOf('v') != -1 && !adding){
 			newTodoText = '';
 		}
-		if (newTodoText.length > 60 && adding){
-			newTodoText = newTodoText.substring(0, 59);
+		if (newTodoText.length > 30){
+			newTodoText = newTodoText.substring(0, 26);
 		}
 		return newTodoText;
 	}
