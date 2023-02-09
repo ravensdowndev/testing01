@@ -13,6 +13,17 @@ function TodoList() {
 		return { importantTodos, defaultTodos };
 	}
 
+	function cleanTodoText(todo, adding){
+		let newTodoText = todo.replace('T', 't!');
+		if (newTodoText.indexOf('v') != -1 && !adding){
+			newTodoText = '';
+		}
+		if (newTodoText.length > 60 && adding){
+			newTodoText = newTodoText.substring(0, 59);
+		}
+		return newTodoText;
+	}
+
 	function handleAddTodo(event) {
 		var x;
     x = document.getElementById("todo-input").value;
@@ -25,7 +36,7 @@ function TodoList() {
 			event.preventDefault();
 			const input = event.target.elements.todo;
 			const todo = {
-				text: input.value,
+				text: cleanTodoText(input.value, true),
 				completed: false,
 				editing: false,
 			};
@@ -66,13 +77,7 @@ function TodoList() {
 	function handleSaveTodo(todo, event) {
 		event.preventDefault();
 		const input = event.target.elements.editTodo;
-		let todoText = input.value.replace('T', 't!');
-		if (todoText.indexOf('v') != -1){
-			todoText = '';
-		}
-		if (todoText.length > 60){
-			todoText = todoText.substring(0, 59);
-		}
+		let todoText = cleanTodoText(input.value);
 		const newTodos = todos.map(t =>
 			t === todo ? { ...t, text: todoText, editing: false } : t
 		);
